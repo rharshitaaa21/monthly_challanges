@@ -1,5 +1,9 @@
 {% extends "base.html" %}
-
+{% load static %}
+{% block css_files %}
+<link rel="stylesheet" href="{% static "challanges/challange.css" %}">
+<link rel="stylesheet" href="{% static "challanges/includes/header.css" %}">
+{% endblock %}
 {%block page_title%}
 <title>{{month_value|title}}</title>
 {% endblock%}
@@ -12,7 +16,7 @@
     {% if text is not None%}
     <h2> {{  text }}</h2>
     {% else %}
-    <p> There is not Challange for this month. You can rest !</p>
+    <p class="fallback"> There is no Challange for this month. You can rest !</p>
     {% endif %}
 
 {% endblock%}
