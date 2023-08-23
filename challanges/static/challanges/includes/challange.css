@@ -3,6 +3,11 @@ h2 {
   text-align: center;
   color: white;
 }
+.custom-center {
+  text-align: center;
+  display: grid;
+  color: white;
+}
 
 h1 {
   font-size: 1.5rem;
