@@ -6,6 +6,8 @@
 
 
 {% block content%}
+{% include "./includes/header.html"  with active_page="challange" %}
+
     <h1>{{ month_value|title  }} Challange</h1>
     {% if text is not None%}
     <h2> {{  text }}</h2>
